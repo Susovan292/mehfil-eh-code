@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codelite 2024</title>
+    <link rel="stylesheet" href="header.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(images/background/1.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 0px 0px 100px 0px;
+            height: 100%;
+        }
+        .time{
+            /* glass effect */
+            background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0)
+            );
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: black;
+            margin-top: 100px;
+            border-radius: 30px;
+            /* border: 1px solid red; */
+            max-width: 90vw;
+            min-width: fit-content;
+            padding: 20px 30px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .time h1{
+            margin-bottom: 20px;
+            color: white;
+            font-family: helvetica;
+        }
+        
+
+        .time .time-wrapper {
+        max-width: 90vw;
+        min-width: fit-content;
+        margin: 0 auto;
+        padding: 0 70px;
+
+        height: 65vh;
+        overflow-y: scroll;
+        border: 2px solid rgb(83, 82, 155);
+        box-shadow: 0px 0px 100px rgb(83, 82, 155);
+        border-radius: 20px;
+
+        -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        
+        }
+        /* Hide scrollbar for Chrome, Safari, and Opera */
+        .time .time-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+            
+
+
+        .timeline {
+        /* border: 2px solid red; */
+        position: relative;
+        
+        margin: 5px auto;
+        color: #000000;
+        /* text-align: center; */
+        max-width: 80vw;
+        min-width: fit-content;
+        }
+        .container {
+        padding: 10px 10px;
+        position: relative;
+        /* border: 2px solid yellow; */
+        width: fit-content;
+        
+        }
+        .text-box {
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 10px;
+        font-size: 15px;
+        width: fit-content;
+        box-shadow: 0px 0px 50px  rgba(255, 255, 255, 0.536);
+        }
+        .left-container {
+        left: 0;
+        }
+        .right-container {
+        left: 20%;
+        }
+        .bgimg {
+        height: 100vh;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <img src="images/logos/Codelite logo2.png" alt="" />
+        <nav>
+            <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="tracks.html">Tracks</a>
+                </li>
+                <li>
+                  <a href="#">Team</a>
+                </li>
+                <li>
+                  <a href="schedule.html">Schedule</a>
+                </li>
+                <li>
+                  <a href="#">Partners</a>
+                </li>
+                <li>
+                  <a href="#">Price</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+        </nav>
+    </header>
+    <div class="time" id="SCHEDULE">
+        <h1>SCHEDULE</h1>
+        <div class="time-wrapper">
+        <div class="timeline">
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Registration</big><br>
+                    <small>08:00AM - 09:00AM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Opening Ceremony & Keynote Speech</big><br>
+                    <small>09:00AM - 10:00AM</small>
+
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Team Formation & Idea Pitching</big><br>
+                    <small>10:00AM - 10:30AM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Technical Workshop</big><br>
+                    <small>10:30AM - 11:00AM</small>
+
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Hacking Begins</big><br>
+                    <small>11:00AM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Lunch Break</big><br>
+                    <small>01:00PM - 02:00PM</small>
+
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Hacking Begins</big><br>
+                    <small>02:00PM - 05:00PM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Coffee Break</big><br>
+                    <small>05:00PM - 05:30PM</small>
+
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Dinner Break</big><br>
+                    <small>08:00PM - 09:00PM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 1</h2>
+                    <big>Hacking Continues</big><br>
+                    <small>09:00PM - 12:00AM</small>
+
+                </div>
+            </div> <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Midnight Challenge</big><br>
+                    <small>12:00AM - 02:00AM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Breakfast</big><br>
+                    <small>07:00AM - 08:00AM</small>
+
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Final Hacking Sprint</big><br>
+                    <small>08:00AM - 11:00PM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Submission Deadline</big><br>
+                    <small>11:00AM - 12:00PM</small>
+
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Lunch Break</big><br>
+                    <small>12:00PM - 01:00PM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Project Presentation & Demo</big><br>
+                    <small>01:00PM - 03:00PM</small>
+
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Judging Delibration</big><br>
+                    <small>03:00PM - 04:00PM</small>
+
+                </div>
+            </div>
+            <div class="container right-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Award Ceremony & Closing Remarks</big><br>
+                    <small>04:00PM - 05:00PM</small>
+
+                </div>
+            </div>
+            <div class="container left-container">
+                <div class="text-box">
+                    <h2>DAY 2</h2>
+                    <big>Hackathon Ends</big><br>
+                    <small>05:00PM</small>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

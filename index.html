@@ -1,317 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codelite 2024</title>
-    <meta name="description"
-        content="A hackathon designed to ignite student passion for innovation and problem-solving. The event will provide a platform for students to " />
-    <link rel="icon" type="image/png" href="img/Codelite logo2.png">
-    <link rel="stylesheet" href="style.css">
+    <meta
+      name="description"
+      content="A hackathon designed to ignite student passion for innovation and problem-solving. The event will provide a platform for students to "
+    />
+    <link rel="icon" type="image/png" href="images/logos/Codelite logo2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
 
-</head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        color: white;
+        text-decoration: none;
+      }
 
-<body>
-    <div class="hero-sec" id="HOME">
-        <img class="bgimg" src="/5769779_33879.jpg">
-        <div class="header">
-            <div class="logo">
-                <img src="img/Codelite logo2.png" alt="" srcset="">
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(23, 23, 107);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
 
+      .hero {
+        background: url(images/background/1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-main {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .row {
+        animation: down 2s infinite ease-in-out;
+        padding: 0px 30px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        box-shadow: 0px 0px 300px 10px rgb(25, 17, 44);
+        padding: 40px 50px;
+        text-align: center;
+        height: 100%;
+        max-width: fit-content;
+        /* glass effect */
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        border-radius: 20px;
+      }
+
+      .left-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 5px;
+        font-family: Blanka-Regular;
+        color: #77c3f1;
+      }
+      /* .right-sec {
+        width: 500px;
+        height: 200px;
+        color: white;
+        background: url(images/logos/Devfolio_Logo-Colored.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      } */
+
+      .left-sec h1 {
+        animation: glow 3s ease-in-out infinite;
+        font-size: 4rem;
+        margin-bottom: 50px;
+      }
+      @keyframes glow {
+        0%,
+        100% {
+          text-shadow: none;
+        }
+        50% {
+          color: #fff;
+          text-shadow: 0 0 10px #03bcff, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+            0 0 80px #03bcf4, 0 0 160px #03bcf4;
+        }
+      }
+      .sec-txt {
+        margin-top: -38px;
+      }
+
+      .apply-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-color: black;
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out 0s;
+      }
+      .apply-button:hover {
+        cursor: pointer;
+        scale: 1.1;
+      }
+      .txt-group span {
+        color: #ebf4f2;
+        font-family: tech1;
+        /* font-weight: 600; */
+        /* font-style: normal; */
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/logos/Codelite logo2.png" alt="" />
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="tracks.html">Tracks</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="schedule.html">Schedule</a>
+          </li>
+          <li>
+            <a href="#">Partners</a>
+          </li>
+          <li>
+            <a href="#">Price</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="hero-main">
+        <div class="row">
+          <div class="left-sec">
+            <h1 class="first-txt">CODELITE</h1>
+            <h1 class="sec-txt">2024</h1>
+
+            <div class="txt-group">
+              <span> Code | Create | Conquer </span>
             </div>
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="#HOME">Home</a>
-                    </li>
-                    <li>
-                        <a href="#TRACKS">Tracks</a>
-                    </li>
-                    <li>
-                        <a href="#">Team</a>
-                    </li>
-                    <li>
-                        <a href="#SCHEDULE">Schedule</a>
-                    </li>
-                    <li>
-                        <a href="#">Partners</a>
-                    </li>
-                    <li>
-                        <a href="#">Price</a>
-                    </li>
-                    <li>
-                        <a href="#ABOUT">About</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQ</a>
-                    </li>
-                </ul>
+            <div
+              class="apply-button"
+              data-hackathon-slug="codelite"
+              data-button-theme="dark"
+              style="height: 44px; width: 312px"
+            >
+              Apply NOW
             </div>
-
+          </div>
+          <div class="right-sec"></div>
         </div>
-        <div class="hero-main">
-            <div class="row">
-                <div class="left-sec">
-                    <h1 class="first-txt">CODELITE </h1>
-                    <H1 class="sec-txt">2024</H1>
-
-                    <div class="txt-group">
-                        <span>
-                            Code | Create | Conquer
-                        </span>
-                    </div>
-                    <div class="apply-button" data-hackathon-slug="codelite" data-button-theme="dark"
-                        style="height:44px; width:312px">
-                    </div>
-                </div>
-                <div class="right-sec">
-                    
-                </div>
-                
-            </div>
-            <!-- <img src="pdealogohd-removebg-preview.png">
-                 -->
-
-        </div>
+      </div>
     </div>
 
-    <div class="aboutSection" id="ABOUT">
-        <div class="txt-center">
-            <h1>ABOUT <span class="span-txt">US</span></h1>
-        </div>
-        <div class="about-group">
-            <div class="left-sec">
-                <img src="aboutimg.jpg" alt="">
-            </div>
-            <div class="right-sec">
-                <div class="upper-box">
-
-                    <h1>WHY <span class="span-txt ">CODELITE</span> ?</h1>
-                    <p>Welcome to CodeLite . Greetings to everyone , we all invite you for the premier hackathon event
-                        designed to bring togehter the brightest minds under a same roof to showcase the talent ,
-                        innovations ,the art you possess inside you. Our theme ,Gen AI & Web 3 gives you the platform to
-                        hold the edge of advancement, evolution & development & shows a road of expansion &
-                        Enhancements.In this 24hrs intense hackathon , you will debate your masterplans and pitch your
-                        victory to the judges. Weather you are an experienced developer or AI - Enthusiast or a
-                        debugger, Code Lite will assure you a platform to showcase your skills , learn from industry
-                        experts and connect with most friendly and experienced mentors . So, join use on the journey of
-                        AI & Web 3 were you will get the thrills of learning and chills of enjoyment and will explore
-                        the future of AI and unleash new possibilities ..!!</p>
-                    <div class="info">
-                        <h1>
-                            IMPORTANT
-                            <span class="span-txt">
-                                DATES AND DEADLINE
-                            </span>
-                        </h1>
-                        <span>
-                            <p class="title">Registration Starting:
-                                <span class="date"> 8th August, 2024</span>
-                            </p>
-                        </span>
-                        <span>
-                            <p class="title">Registration Deadline:
-                                <span class="date"> 20th September, 2024</span>
-                            </p>
-                        </span>
-                        <span>
-                            <p class="title">CODELITE:
-                                <span class="date"> 28th September, 2024</span>
-                            </p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="Tracks" id="TRACKS">
-        <div class="text-center">
-            <h1>Tracks</h1>
-
-        </div>
-
-    </div>
-    <div class="time" id="SCHEDULE">
-        <h1>SCHEDULE</h1>
-       <div class="time-wrapper">
-        <div class="timeline">
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Registration</big><br>
-                    <small>08:00AM - 09:00AM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Opening Ceremony & Keynote Speech</big><br>
-                    <small>09:00AM - 10:00AM</small>
-
-                </div>
-            </div>
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Team Formation & Idea Pitching</big><br>
-                    <small>10:00AM - 10:30AM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Technical Workshop</big><br>
-                    <small>10:30AM - 11:00AM</small>
-
-                </div>
-            </div>
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Hacking Begins</big><br>
-                    <small>11:00AM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Lunch Break</big><br>
-                    <small>01:00PM - 02:00PM</small>
-
-                </div>
-            </div>
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Hacking Begins</big><br>
-                    <small>02:00PM - 05:00PM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Coffee Break</big><br>
-                    <small>05:00PM - 05:30PM</small>
-
-                </div>
-            </div>
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Dinner Break</big><br>
-                    <small>08:00PM - 09:00PM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 1</h2>
-                    <big>Hacking Continues</big><br>
-                    <small>09:00PM - 12:00AM</small>
-
-                </div>
-            </div> <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Midnight Challenge</big><br>
-                    <small>12:00AM - 02:00AM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Breakfast</big><br>
-                    <small>07:00AM - 08:00AM</small>
-
-                </div>
-            </div>
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Final Hacking Sprint</big><br>
-                    <small>08:00AM - 11:00PM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Submission Deadline</big><br>
-                    <small>11:00AM - 12:00PM</small>
-
-                </div>
-            </div>
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Lunch Break</big><br>
-                    <small>12:00PM - 01:00PM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Project Presentation & Demo</big><br>
-                    <small>01:00PM - 03:00PM</small>
-
-                </div>
-            </div>
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Judging Delibration</big><br>
-                    <small>03:00PM - 04:00PM</small>
-
-                </div>
-            </div>
-            <div class="container right-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Award Ceremony & Closing Remarks</big><br>
-                    <small>04:00PM - 05:00PM</small>
-
-                </div>
-            </div>
-            <div class="container left-container">
-                <div class="text-box">
-                    <h2>DAY 2</h2>
-                    <big>Hackathon Ends</big><br>
-                    <small>05:00PM</small>
-
-                </div>
-            </div>
-            
-        
-        </div>
-       </div>
-       <div class ="wrapper_footer">
-        <div id="sm_links">
-                    <a href="https://github.com/bhat-shubham" target="_blank"> <img id="sm_logo" src="github (3).png"></a>
-                    <a href="https://www.linkedin.com/in/bhatsupshubham/" target="_blank"> <img id="sm_logo" src="linkedin.png"></a>
-                    <a href="https://discord.com/users/1092773129463550123" target="_blank"> <img id="sm_logo" src="discord.png"></a>
-                    <a href="https://www.instagram.com/bhatsup.shubham" target="_blank"> <img id="sm_logo" src="social.png"></a>                    
-        </div>
-                <div id="text_footer">
-                <pre>Made With &#x2764; By CodeLite</pre>
-                </div>
-                <div id="Copyright_text">
-                     &#169 2024 CodeLite All Rights Reserved
-                </div>
-    </div>
-
-
-
-
-
-    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
-</body>
-
+    <footer></footer>
+  </body>
 </html>
